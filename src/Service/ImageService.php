@@ -27,6 +27,6 @@ class ImageService
             $image->getHeight());
 
         $image_type_class_name = get_class($image);
-        return new $image_type_class_name($image);
+        return new $image_type_class_name($image->getImageResource());
     }
 }
