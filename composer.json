@@ -4,7 +4,6 @@
     "license": "gpl-3.0",
     "require": {
         "php": "^7.4",
-        "ext-exif": "*",
         "ext-gd": "*"
     },
     "autoload": {
