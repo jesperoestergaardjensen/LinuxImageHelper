@@ -1,0 +1,26 @@
+{
+    "name": "jesperoestergaardjensen/linux-image-helper",
+    "description": "Small repository to make it easier to work with images",
+    "license": "gpl-3.0",
+    "require": {
+        "php": "^7.4",
+        "ext-exif": "*",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LinuxImageHelper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LinuxImageHelper\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
