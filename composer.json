@@ -1,7 +1,7 @@
 {
     "name": "jesperoestergaardjensen/linux-image-helper",
     "description": "Small repository to make it easier to work with images",
-    "license": "gpl-3.0",
+    "license": "gpl-3.0-only",
     "require": {
         "php": ">=7.4",
         "ext-gd": "*"
