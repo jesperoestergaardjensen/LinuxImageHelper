@@ -27,7 +27,7 @@ class JpgImageService extends ImageService
         $image_type = $image_info[2];
 
         if ($image_type !== IMAGETYPE_JPEG) {
-            throw new LinuxImageHelperException('Use this service only to create jpg files, supplied filetype was ' . $image_type);
+            throw new LinuxImageHelperException('Use this service only to create jpg files, supplied mine type was ' . image_type_to_mime_type($image_type));
         }
 
         if (! function_exists('imagecreatefromjpeg')) {

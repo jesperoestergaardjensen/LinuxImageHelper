@@ -3,7 +3,7 @@
     "description": "Small repository to make it easier to work with images",
     "license": "gpl-3.0",
     "require": {
-        "php": "^7.4",
+        "php": ">=7.4",
         "ext-gd": "*"
     },
     "autoload": {
@@ -20,6 +20,6 @@
         "phpunit/phpunit": "^9.5"
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "vendor/bin/phpunit tests"
     }
 }
