@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655677147">
-  <project timestamp="1655677147">
+<coverage generated="1664564591">
+  <project timestamp="1664564591">
     <file name="/home/jesper_privat/web-udvikling/linux-image-helper/src/Exception/LinuxImageHelperException.php">
       <class name="LinuxImageHelper\Exception\LinuxImageHelperException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -11,8 +11,8 @@
       <class name="LinuxImageHelper\Model\Image" namespace="global">
         <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
       </class>
-      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
-      <line num="12" type="stmt" count="6"/>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="12" type="stmt" count="7"/>
       <line num="15" type="method" name="getWidth" visibility="public" complexity="1" crap="1" count="5"/>
       <line num="17" type="stmt" count="5"/>
       <line num="20" type="method" name="getHeight" visibility="public" complexity="1" crap="1" count="5"/>
@@ -29,49 +29,51 @@
     </file>
     <file name="/home/jesper_privat/web-udvikling/linux-image-helper/src/Service/ImageService.php">
       <class name="LinuxImageHelper\Service\ImageService" namespace="global">
-        <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
+        <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
       </class>
-      <line num="10" type="method" name="resizeToHeight" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="12" type="stmt" count="1"/>
+      <line num="11" type="method" name="resizeToHeight" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="13" type="stmt" count="1"/>
-      <line num="15" type="stmt" count="1"/>
-      <line num="18" type="method" name="resizeToWidth" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="20" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <line num="16" type="stmt" count="1"/>
+      <line num="19" type="method" name="resizeToWidth" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="21" type="stmt" count="1"/>
-      <line num="23" type="stmt" count="1"/>
-      <line num="29" type="method" name="resize" visibility="public" complexity="2" crap="2.01" count="4"/>
-      <line num="31" type="stmt" count="4"/>
-      <line num="32" type="stmt" count="4"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="30" type="method" name="resize" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="33" type="stmt" count="5"/>
       <line num="34" type="stmt" count="4"/>
-      <line num="41" type="stmt" count="4"/>
-      <line num="42" type="stmt" count="4"/>
-      <line num="45" type="stmt" count="4"/>
-      <line num="46" type="stmt" count="0"/>
-      <line num="49" type="stmt" count="4"/>
-      <line num="51" type="stmt" count="4"/>
-      <metrics loc="54" ncloc="51" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
+      <line num="36" type="stmt" count="4"/>
+      <line num="43" type="stmt" count="4"/>
+      <line num="44" type="stmt" count="4"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="4"/>
+      <line num="52" type="stmt" count="4"/>
+      <metrics loc="55" ncloc="52" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
     </file>
     <file name="/home/jesper_privat/web-udvikling/linux-image-helper/src/Service/JpgImageService.php">
       <class name="LinuxImageHelper\Service\JpgImageService" namespace="global">
-        <metrics complexity="5" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="10" elements="15" coveredelements="11"/>
+        <metrics complexity="6" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="13" elements="17" coveredelements="14"/>
       </class>
-      <line num="16" type="method" name="createJpg" visibility="public" complexity="4" crap="4.32" count="5"/>
-      <line num="19" type="stmt" count="5"/>
-      <line num="21" type="stmt" count="5"/>
-      <line num="23" type="stmt" count="0"/>
-      <line num="26" type="stmt" count="5"/>
-      <line num="27" type="stmt" count="5"/>
-      <line num="29" type="stmt" count="5"/>
-      <line num="30" type="stmt" count="0"/>
-      <line num="33" type="stmt" count="5"/>
-      <line num="34" type="stmt" count="0"/>
-      <line num="37" type="stmt" count="5"/>
-      <line num="39" type="stmt" count="5"/>
-      <line num="42" type="method" name="saveJpgToDisc" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="44" type="stmt" count="1"/>
-      <line num="45" type="stmt" count="1"/>
-      <metrics loc="48" ncloc="40" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="10" elements="15" coveredelements="11"/>
+      <line num="17" type="method" name="createJpg" visibility="public" complexity="5" crap="5.09" count="8"/>
+      <line num="20" type="stmt" count="8"/>
+      <line num="22" type="stmt" count="8"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="8"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="7"/>
+      <line num="35" type="stmt" count="7"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="6"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="6"/>
+      <line num="45" type="stmt" count="6"/>
+      <line num="48" type="method" name="saveJpgToDisc" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <metrics loc="54" ncloc="46" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="13" elements="17" coveredelements="14"/>
     </file>
-    <metrics files="5" loc="150" ncloc="138" classes="3" methods="9" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="28" elements="41" coveredelements="35"/>
+    <metrics files="5" loc="157" ncloc="145" classes="3" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="32" elements="43" coveredelements="40"/>
   </project>
 </coverage>
