@@ -1,4 +1,7 @@
 ## Release notes : _Linux Image Helper_
+### Version 1.0.0 - Oct 2022
+* Improved test coverage
+
 ### Version 0.1.5 - Mar 2022
 #### Changes / Fixes
 * Adjust error message to be more correct. 

@@ -4,10 +4,11 @@ namespace LinuxImageHelper\Service;
 
 use LinuxImageHelper\Exception\LinuxImageHelperException;
 use LinuxImageHelper\Model\Image;
+use Throwable;
 
 abstract class ImageService
 {
-    function resizeToHeight(Image $image, int $height): Image
+    public function resizeToHeight(Image $image, int $height): Image
     {
         $ratio = $height / $image->getHeight();
         $width = $image->getWidth() * $ratio;
@@ -15,7 +16,7 @@ abstract class ImageService
         return $this->resize($image, $width, $height);
     }
 
-    function resizeToWidth(Image $image, int $width): Image
+    public function resizeToWidth(Image $image, int $width): Image
     {
         $ratio = $width / $image->getWidth();
         $height = $image->getheight() * $ratio;
@@ -26,23 +27,23 @@ abstract class ImageService
     /**
      * @throws LinuxImageHelperException
      */
-    function resize(Image $image, int $width, int $height): Image
+    public function resize(Image $image, int $width, int $height): Image
     {
-        $new_image = imagecreatetruecolor($width, $height);
-        $resize_success = imagecopyresampled(
-            $new_image,
-            $image->getImageResource(),
-            0,
-            0,
-            0,
-            0,
-            $width,
-            $height,
-            $image->getWidth(),
-            $image->getHeight()
-        );
-
-        if ($resize_success === false) {
+        try {
+            $new_image = imagecreatetruecolor($width, $height);
+            imagecopyresampled(
+                $new_image,
+                $image->getImageResource(),
+                0,
+                0,
+                0,
+                0,
+                $width,
+                $height,
+                $image->getWidth(),
+                $image->getHeight()
+            );
+        } catch (Throwable $exception) {
             throw new LinuxImageHelperException('Resize image failed');
         }
 

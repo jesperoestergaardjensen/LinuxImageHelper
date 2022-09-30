@@ -4,6 +4,7 @@ namespace LinuxImageHelper\Service;
 
 use LinuxImageHelper\Exception\LinuxImageHelperException;
 use LinuxImageHelper\Model\JpgImage;
+use Throwable;
 
 class JpgImageService extends ImageService
 {
@@ -23,7 +24,12 @@ class JpgImageService extends ImageService
             throw new LinuxImageHelperException('Required extension GD is not loaded.');
         }
 
-        $image_info = getimagesize($filename_and_path);
+        try {
+            $image_info = getimagesize($filename_and_path);
+        } catch (Throwable $exception) {
+            throw new LinuxImageHelperException($exception->getMessage());
+        }
+
         $image_type = $image_info[2];
 
         if ($image_type !== IMAGETYPE_JPEG) {
